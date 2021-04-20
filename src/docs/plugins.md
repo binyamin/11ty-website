@@ -25,7 +25,7 @@ All official plugins live under the `@11ty` npm organization and plugin names wi
 {%- set url = plugin.url or "https://www.npmjs.com/package/" + plugin.npm %}
 * [{% if plugin.deprecated %}~~{% endif %}{{ plugin.npm }}{% if plugin.deprecated %}~~{% endif %}]({{ url }}){% if plugin.description %} {% if plugin.deprecated %}~~{% endif %}{{ plugin.description | safe }}{% if plugin.deprecated %}~~{% endif %}{% endif %} {{ plugin.deprecated }} {% authorLink authors, plugin.author %}
 {%- endfor %}
-* [Add your own](https://github.com/11ty/11ty-website/tree/master/_data/plugins)!
+* [Add your own](https://github.com/11ty/11ty-website/tree/master/src/_data/plugins)!
 
 ## Adding a Plugin
 
